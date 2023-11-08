@@ -8,7 +8,7 @@ const Newsitem = ({ title, description, src, url }) => {
     >
       <img
         src={src}
-        style={{ height: "150px", width: "300px" }}
+        style={{ height: "150px", width: "312px" }}
         className="card-img-top"
         alt="..."
       />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Newsitem from "./Newsitem";
 
-const Newsboard = ({ category }) => {
+ const Newsboard = ({ category }) => {
   const [articles, setarticles] = useState([]);
   useEffect(() => {
     let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
