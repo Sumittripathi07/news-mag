@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import Newsitem from "./Newsitem";
 
- const Newsboard = ({ category }) => {
+// eslint-disable-next-line react/prop-types
+const Newsboard = ({ category }) => {
   const [articles, setarticles] = useState([]);
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=c83207c090b44243b18670262d33deea`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setarticles(data.articles));
